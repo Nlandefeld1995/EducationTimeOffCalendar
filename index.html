@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Time Off Calendar</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="{}" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="calendar">
+        <h3>Time Off Calendar</h3>
+    </div>
+    <div id="timeOff">
+        <h3>Submit Days Off</h3>
+        <div class="autocomplete">
+            <div class="container"><label>Name:</label><br></div>
+            <input id="myInput" type="text" name="myName" placeholder="Name">
+        </div>
+        <div class="container"> <label>Date Start:</label><br>
+            <div id="start_c"> </div>
+        </div>
+        <div class="container"> <label>Date End:</label><br>
+            <div id="end_c"> </div>
+        </div>
+        <div class="container"> <label>Comments:</label><br>
+            <input id="comments" type="text-box">
+        </div>
+        <div class="container"> <input type="button" value="Submit" onclick="submitTimeOff();">
+        </div>
+        <div id="user_message" style="display: none; padding-top:30px;">
+            <a id="user_message_a"></a>
+        </div>
+        <div id="loader" style="display: none; padding-top:20px;" class="container">
+            <div class="loader-wrapper">
+                <div class="loader">
+                    <div class="roller"></div>
+                    <div class="roller"></div>
+                </div>
+
+                <div id="loader2" class="loader">
+                    <div class="roller"></div>
+                    <div class="roller"></div>
+                </div>
+
+                <div id="loader3" class="loader">
+                    <div class="roller"></div>
+                    <div class="roller"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="{}" crossorigin="anonymous"></script>
+    <script src="js/domo.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
